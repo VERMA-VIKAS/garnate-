@@ -1,0 +1,43 @@
+.strip {
+    background: linear-gradient(90deg, #f8934c, hsla(25, 99%, 72%, 0) 50%, #f8934c);
+}
+
+.header {
+    background: linear-gradient(90deg, #f8934c, hsla(25, 99%, 72%, 0) 50%, #f8934c);
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+#lbtn {
+    border: none;
+    border-radius: 0;
+    background: linear-gradient(90deg, #e6843f, hsla(25, 72%, 65%, 0) 50%, #f8934c);
+}
+
+#item {
+    border-top: 2px solid #fcd089;
+    border-bottom: 2px solid #fcd089;
+    background-color: #ced4da;
+}
+
+#item a {
+    text-decoration: none;
+    color: black;
+
+}
+
+#s-btn input {
+    border: 1px solid #fcd089;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-right: 0;
+}
+
+#s-btn img {
+    border: 1px solid #fcd089;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-left: 0;
+}
