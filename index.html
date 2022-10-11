@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <title>document</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -14,20 +14,74 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container-fluid ">
-        <nav class="navbar navbar-expand-sm sticky-top">
-            <div class="container-fluid">
-                <div class="container-fluid d-flex justify-content-center">
-                    <div class="d-flex justify-content-center">Garnet Lanne-Dazzling You Today.Tomorrow and
-                        Forever</div>
+    <div class="container-fluid px-0 py-0 mx-0 my-0">
+        <!-- ------------Header--------- -->
+        <header class="header mx-1">
+            <div class="row w-100 strip">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 d-flex justify-content-center px-0">Garnet Lanee-Dazzling You Today,Tomorrow and
+                    Forever</div>
+                <div class="col-sm-2 d-flex justify-content-center" style="cursor:pointer;"><button type="button"
+                        id="lbtn" class="btn btn-secondary">Login/Register
+                        </Register></button></div>
+            </div>
+        </header>
+        <!-- Implement the Navbar -->
+        <nav class="navbar navbar-expand-sm sticky-top bg-white px-0 mx-0 my-0 d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#myList"
+                        aria-controls="myList" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="float-end">
+                    <img src="img/logo.svg" class="d-block w-100 d-lg-none" alt="Images not found">
+                </div>
+            </div>
+            <div>
+                <!-- Toggler/collapsibe Button for small screens -->
+                <!-- List of links -->
+                <div class="collapse navbar-collapse" id="myList">
+                    <nav color="white" class="row navbar navbar-light w-100 ">
+                        <!-- --------------------Toggle menu Start-------------------------- -->
+                        <div class="col-md-4">
+                        </div>
+                        <!-- -----------------------------Toggle menuend Here---------------------- -->
+                        <div class="col-md-4">
+                            <img src="img/logo.svg" class="d-block w-100 d-none d-md-block" alt="Images not found">
+                        </div>
+                        <div class="col-md-4  d-flex justify-content-between">
+                            <div id="s-btn">
+                                <input type="text" placeholder="Search"><img class="pe-3 py-1 mb-1" src="img/icn.svg"
+                                    alt="" height="28">
+                            </div>
+                            <div class="ps-1">
+                                <img src="img/like.svg" alt="" height="20px" width="20">
+                                <img src="img/history.svg" alt="" height="20px" width="20">
+                                <img src="img/cart.svg" alt="" height="20px" width="20">
+                                <img src="img/scanner.svg" alt="" height="20px" width="20">
+                            </div>
+                        </div>
+                        <div class="row w-100 text-center" id="item">
+                            <div class="col"><a href="">NEW ARRIVAL</a></div>
+                            <div class="col"><a href="">RINGS</a></div>
+                            <div class="col"><a href="">EARRINGS</a></div>
+                            <div class="col"><a href="">PENDANTS</a></div>
+                            <div class="col"><a href="">BRACELET</a></div>
+                            <div class="col"><a href="">GOLD COIN</a></div>
+                            <div class="col"><a href="">SOLITAIRE</a></div>
+                            <div class="col"><a href="">ALL JEWELLERY</a></div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </nav>
-        <!-- ----------------------------SLIDER-------------------------------- -->
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel px-0">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel w-50 postion-relative">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="1000">
                     <img src="img/banner.webp" class="d-block w-100" alt="Images not found">
@@ -52,14 +106,17 @@
         </div>
         <!-- ----------------------------Slider-completed----------------------------- -->
         <!-- --------------------------Bottom-images------------------------ -->
-        <div class="row my-5">
-            <div class="col-sm-6">
-                <img src="img/ls.svg" class="img-fluid" alt="Image here">
-            </div>
-            <div class="col-sm-6">
-                <img src="img/rs.svg" class="img-fluid" alt="Image here">
+        <div class="container mt-5 w-100">
+            <div class="row">
+                <div class="col">
+                    <img src="img/ls.svg" alt="" width="100%">
+                </div>
+                <div class="col">
+                    <img src="img/rs.svg" alt="" width="100%">
+                </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 
