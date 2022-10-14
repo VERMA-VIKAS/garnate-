@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -18,105 +19,145 @@
 </head>
 
 <body>
+
     <div class="container-fluid px-0 py-0 mx-0 my-0">
-        <!-- ------------Header--------- -->
-        <header class="header mx-1">
-            <div class="row w-100 strip">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8 d-flex justify-content-center px-0">Garnet Lanee-Dazzling You Today,Tomorrow and
+        <header class="header px-0 mx-0" style="max-height:40px;">
+            <div class=" strip d-flex justify-content-center">
+                <div class="fs-6 w-100 text-center d-flex justify-content-center "
+                    style="max-height:40px;overflow: hidden; line-height: 15px; font-size: 12px !important; align-items: center;">
+                    Garnet
+                    Lanee-Dazzling You Today,Tomorrow
+                    and
                     Forever</div>
-                <div class="col-sm-2 d-flex justify-content-center" style="cursor:pointer;"><button type="button"
-                        id="lbtn" class="btn btn-secondary">Login/Register
+                <div class="d-flex  justify-content-end" style="cursor:pointer;" style="max-height:40px;"><button
+                        type="button" id="lbtn" class="btn btn-secondary"
+                        style="outline:none; box-shadow: none; color: black; font-size: 12px;">Login/Register
                         </Register></button></div>
             </div>
         </header>
-        <!-- Implement the Navbar -->
-        <nav class="navbar navbar-expand-sm sticky-top bg-white px-0 mx-0 my-0 d-flex flex-column">
-            <div class="d-flex justify-content-between align-items-center">
+        <div class="offcanvas offcanvas-start" id="myList">
+            <div class="offcanvas-header position-relative">
+                <img src="img/logo.svg" alt="" width="100%">
+                <button type="button" class="btn-close position-absolute" data-bs-dismiss="offcanvas"
+                    style=" top: 6px;right: 3px; outline:none; box-shadow: none;">
+                </button>
+            </div>
+            <div class="offcanvas-body px-0 pt-2" style="border-top: 4px solid black;">
                 <div>
-                    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#myList"
-                        aria-controls="myList" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="float-end">
-                    <img src="img/logo.svg" class="d-block w-100 d-lg-none" alt="Images not found">
+                    <div class="d-flex justify-content-between mb-3 px-2">
+                        <div id="s-btn">
+                            <input type="text" placeholder="Search"><img class="pe-3 py-1 mb-1" src="img/icn.svg" alt=""
+                                height="28">
+                        </div>
+                        <div>
+                            <img src="img/like.svg" alt="" height="20px" width="20">
+                            <img src="img/history.svg" alt="" height="20px" width="20">
+                            <img src="img/cart.svg" alt="" height="20px" width="20">
+                            <img src="img/scanner.svg" alt="" height="20px" width="20">
+                        </div>
+                    </div>
+                    <div class="w-100  item-list ms-0 ps-0">
+                        <div><a href="" class="ps-3">NEW ARRIVAL</a></div>
+                        <div><a href=""class="ps-3">RINGS</a></div>
+                        <div><a href=""class="ps-3">EARRINGS</a></div>
+                        <div><a href=""class="ps-3">PENDANTS</a></div>
+                        <div><a href=""class="ps-3">BRACELET</a></div>
+                        <div><a href=""class="ps-3">GOLD COIN</a></div>
+                        <div><a href=""class="ps-3">SOLITAIRE</a></div>
+                        <div><a href=""class="ps-3">ALL JEWELLERY</a></div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <!-- Toggler/collapsibe Button for small screens -->
-                <!-- List of links -->
-                <div class="collapse navbar-collapse" id="myList">
+        </div>
+        <div class="container-fluid px-0 py-0">
+            <nav class="navbar navbar-expand-sm sticky-top  navbar-light bg-light d-flex flex-column pt-0">
+                <!-- --------------------------menu start Here--------------------- -->
+                <div class="d-flex align-self-center  bg-white">
                     <nav color="white" class="row navbar navbar-light w-100 ">
                         <!-- --------------------Toggle menu Start-------------------------- -->
                         <div class="col-md-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <button class="navbar-toggler ms-2 my-1 px-0 py-0 border-0" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#myList">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                                <div class="float-end">
+                                    <img src="img/logo.svg" class="d-block d-lg-none ms-5" alt="Images not found"
+                                        width="70%">
+                                </div>
+                            </div>
                         </div>
                         <!-- -----------------------------Toggle menuend Here---------------------- -->
                         <div class="col-md-4">
-                            <img src="img/logo.svg" class="d-block w-100 d-none d-md-block" alt="Images not found">
+                            <img src="img/logo.svg" class="d-none d-sm-block w-100" alt="Images not found">
                         </div>
-                        <div class="col-md-4  d-flex justify-content-between">
-                            <div id="s-btn">
+                        <div class="col-md-4 d-flex justify-content-between">
+                            <div class="d-none d-sm-block" id="s-btn">
                                 <input type="text" placeholder="Search"><img class="pe-3 py-1 mb-1" src="img/icn.svg"
                                     alt="" height="28">
                             </div>
-                            <div class="ps-1">
+                            <div class="ps-1 d-none d-sm-block">
                                 <img src="img/like.svg" alt="" height="20px" width="20">
                                 <img src="img/history.svg" alt="" height="20px" width="20">
                                 <img src="img/cart.svg" alt="" height="20px" width="20">
                                 <img src="img/scanner.svg" alt="" height="20px" width="20">
                             </div>
                         </div>
-                        <div class="row w-100 text-center" id="item">
-                            <div class="col"><a href="">NEW ARRIVAL</a></div>
-                            <div class="col"><a href="">RINGS</a></div>
-                            <div class="col"><a href="">EARRINGS</a></div>
-                            <div class="col"><a href="">PENDANTS</a></div>
-                            <div class="col"><a href="">BRACELET</a></div>
-                            <div class="col"><a href="">GOLD COIN</a></div>
-                            <div class="col"><a href="">SOLITAIRE</a></div>
-                            <div class="col"><a href="">ALL JEWELLERY</a></div>
-                        </div>
                     </nav>
                 </div>
-            </div>
-        </nav>
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel w-50 postion-relative">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="1000">
-                    <img src="img/banner.webp" class="d-block w-100" alt="Images not found">
+                <!-- ------------menu end---------------------- -->
+                <!-- ---------------------item-list start----------------- -->
+                <div class="row w-100 text-center bg-white" id="item">
+                    <div class="col d-none d-sm-block">NEW ARRIVAL</div>
+                    <div class="col d-none d-sm-block">RINGS</div>
+                    <div class="col d-none d-sm-block">EARRINGS</div>
+                    <div class="col d-none d-sm-block">PENDANTS</div>
+                    <div class="col d-none d-sm-block">BRACELET</div>
+                    <div class="col d-none d-sm-block">GOLD COIN</div>
+                    <div class="col d-none d-sm-block">SOLITAIRE</div>
+                    <div class="col d-none d-sm-block">ALL JEWELLERY</div>
                 </div>
-                <div class="carousel-item" data-bs-interval="200">
-                    <img src="img/banner.webp" class="d-block w-100" alt="Images not found">
-                </div>
-                <div class="carousel-item" data-bs-interval="100">
-                    <img src="img/banner.webp" class="d-block w-100" alt="Images not found">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!-- ----------------------------Slider-completed----------------------------- -->
-        <!-- --------------------------Bottom-images------------------------ -->
-        <div class="container mt-5 w-100">
-            <div class="row">
-                <div class="col">
-                    <img src="img/ls.svg" alt="" width="100%">
-                </div>
-                <div class="col">
-                    <img src="img/rs.svg" alt="" width="100%">
-                </div>
-            </div>
+                <!-- ---------------------------item list end----------------------- -->
         </div>
     </div>
+    </nav>
+    </div>
+    <div id="carouselExampleInterval" class="carousel slide bg-white" data-bs-ride="carousel w-50 postion-relative">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="500">
+                <img src="img/banner.webp" class="d-block w-100" alt="Images not found">
+            </div>
+            <div class="carousel-item" data-bs-interval="200">
+                <img src="img/banner.webp" class="d-block w-100" alt="Images not found">
+            </div>
+            <div class="carousel-item" data-bs-interval="100">
+                <img src="img/banner.webp" class="d-block w-100" alt="Images not found">
+            </div>
+        </div>
+        <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- ----------------------------Slider-completed----------------------------- -->
+    <!-- --------------------------Bottom-images------------------------ -->
+    <div class="container mt-5 w-100 bg-white">
+        <div class="row">
+            <div class="col">
+                <img src="img/ls.svg" alt="" width="100%">
+            </div>
+            <div class="col">
+                <img src="img/rs.svg" alt="" width="100%">
+            </div>
+        </div>
     </div>
 </body>
 
